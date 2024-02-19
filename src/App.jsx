@@ -52,7 +52,7 @@ const App = () => {
   return (
     <div className=" h-screen text-center flex  justify-center  ">
       <div className=" lg:w-6/12  mx-auto border-2 border-gray-100 rounded-lg py-5">
-        <h1 className=" py-8 text-4xl font-bold text-white">Todo List</h1>
+        <h1 className=" py-8 text-5xl font-bold text-white">Todo List</h1>
         <div className="">
           <input
           placeholder="write your task"

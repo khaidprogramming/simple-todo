@@ -1,9 +1,14 @@
 import React, { useState } from "react";
 
-const Todo = ({ todo, handleDelete, setTodoList, handleCheck }) => {
+const Todo = ({ todo, handleDelete, setTodoList }) => {
   const { id, title } = todo;
   const [updateButton, setUpdateButton] = useState(false);
   const [inputValue, setInputValue] = useState("");
+  const[checked,setChecked] = useState(false);
+
+  const handleCheckBoxChange = () => {
+setChecked(!checked)
+  }
 
   const handleEdit = (id) => {
     setUpdateButton(!updateButton);
@@ -22,8 +27,8 @@ const Todo = ({ todo, handleDelete, setTodoList, handleCheck }) => {
   return (
     <div className="border-black border flex justify-between   w-11/12 bg-white lg:mx-auto mr-32 px-4 py-3 rounded-xl">
       <div className=" flex ">
-        <input type="checkbox" className="border border-black mx-3" />
-        <h2>{title}</h2>
+        <input type="checkbox" className="border border-black mx-3" onChange={handleCheckBoxChange} />
+        <h2 className={checked?"line-through":""}>{title}</h2>
       </div>
 
       <div>
