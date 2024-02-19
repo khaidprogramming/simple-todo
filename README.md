@@ -19,7 +19,7 @@ Welcome to the Simple Todo App repository! This project is built using React JS 
 2. Navigate into the project directory:
 
     ```
-    cd simple-todo-app
+    cd simple-todo
     ```
 
 3. Install dependencies using npm:
@@ -55,7 +55,7 @@ We welcome contributions from the community! If you'd like to contribute to this
     ```
 5. Open a pull request against the `main` branch of the original repository.
 
-We'll review your changes and merge them once they've been approved.
+
 
 ## Issues
 
